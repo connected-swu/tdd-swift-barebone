@@ -44,7 +44,6 @@ In this exercise, we've decided to split the feature into the stories **A**, **B
 
 Begin by opening `tddSwiftBlankTests/PasswordVerifierSpec.swift` and writing a failing test for the first story.  Then continue to `tddSwiftBlank/PasswordVerifier.swift` to fill out the passing implementation.
 
-**==================== UPDATE THESE INSTRUCTIONS HERE ====================**
 Don't forget to check out [these tips](#helpful-tips).  Go [here](#a-few-notes-on-tooling) if you're interested in learning a bit more about the TDD framework.
 
 **Story A**
