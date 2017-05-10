@@ -13,7 +13,10 @@
 		F4F74E881EBBCAE7003C9981 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4F74E861EBBCAE7003C9981 /* Main.storyboard */; };
 		F4F74E8A1EBBCAE7003C9981 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4F74E891EBBCAE7003C9981 /* Assets.xcassets */; };
 		F4F74E8D1EBBCAE7003C9981 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4F74E8B1EBBCAE7003C9981 /* LaunchScreen.storyboard */; };
-		F4F74E981EBBCAE7003C9981 /* tddSwiftBlankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F74E971EBBCAE7003C9981 /* tddSwiftBlankTests.swift */; };
+		F4F74EAB1EC2544A003C9981 /* PasswordVerifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F74EAA1EC2544A003C9981 /* PasswordVerifier.swift */; };
+		F4F74EAD1EC25452003C9981 /* SwuPasswordVerifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F74EAC1EC25452003C9981 /* SwuPasswordVerifier.swift */; };
+		F4F74EAF1EC2546C003C9981 /* PasswordVerifierSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F74EAE1EC2546C003C9981 /* PasswordVerifierSpec.swift */; };
+		F4F74EB11EC2548F003C9981 /* SwuPasswordVerifierSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F74EB01EC2548F003C9981 /* SwuPasswordVerifierSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +41,11 @@
 		F4F74E8C1EBBCAE7003C9981 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4F74E8E1EBBCAE7003C9981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4F74E931EBBCAE7003C9981 /* tddSwiftBlankTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tddSwiftBlankTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F4F74E971EBBCAE7003C9981 /* tddSwiftBlankTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tddSwiftBlankTests.swift; sourceTree = "<group>"; };
 		F4F74E991EBBCAE7003C9981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4F74EAA1EC2544A003C9981 /* PasswordVerifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordVerifier.swift; sourceTree = "<group>"; };
+		F4F74EAC1EC25452003C9981 /* SwuPasswordVerifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwuPasswordVerifier.swift; sourceTree = "<group>"; };
+		F4F74EAE1EC2546C003C9981 /* PasswordVerifierSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordVerifierSpec.swift; sourceTree = "<group>"; };
+		F4F74EB01EC2548F003C9981 /* SwuPasswordVerifierSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwuPasswordVerifierSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,11 +108,13 @@
 			isa = PBXGroup;
 			children = (
 				F4F74E821EBBCAE7003C9981 /* AppDelegate.swift */,
-				F4F74E841EBBCAE7003C9981 /* ViewController.swift */,
-				F4F74E861EBBCAE7003C9981 /* Main.storyboard */,
 				F4F74E891EBBCAE7003C9981 /* Assets.xcassets */,
-				F4F74E8B1EBBCAE7003C9981 /* LaunchScreen.storyboard */,
 				F4F74E8E1EBBCAE7003C9981 /* Info.plist */,
+				F4F74E8B1EBBCAE7003C9981 /* LaunchScreen.storyboard */,
+				F4F74E861EBBCAE7003C9981 /* Main.storyboard */,
+				F4F74EAA1EC2544A003C9981 /* PasswordVerifier.swift */,
+				F4F74EAC1EC25452003C9981 /* SwuPasswordVerifier.swift */,
+				F4F74E841EBBCAE7003C9981 /* ViewController.swift */,
 			);
 			path = tddSwiftBlank;
 			sourceTree = "<group>";
@@ -114,8 +122,9 @@
 		F4F74E961EBBCAE7003C9981 /* tddSwiftBlankTests */ = {
 			isa = PBXGroup;
 			children = (
-				F4F74E971EBBCAE7003C9981 /* tddSwiftBlankTests.swift */,
 				F4F74E991EBBCAE7003C9981 /* Info.plist */,
+				F4F74EAE1EC2546C003C9981 /* PasswordVerifierSpec.swift */,
+				F4F74EB01EC2548F003C9981 /* SwuPasswordVerifierSpec.swift */,
 			);
 			path = tddSwiftBlankTests;
 			sourceTree = "<group>";
@@ -179,6 +188,7 @@
 					F4F74E921EBBCAE7003C9981 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 5B283G7QPP;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 						TestTargetID = F4F74E7E1EBBCAE7003C9981;
 					};
@@ -278,6 +288,8 @@
 			files = (
 				F4F74E851EBBCAE7003C9981 /* ViewController.swift in Sources */,
 				F4F74E831EBBCAE7003C9981 /* AppDelegate.swift in Sources */,
+				F4F74EAD1EC25452003C9981 /* SwuPasswordVerifier.swift in Sources */,
+				F4F74EAB1EC2544A003C9981 /* PasswordVerifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,7 +297,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4F74E981EBBCAE7003C9981 /* tddSwiftBlankTests.swift in Sources */,
+				F4F74EAF1EC2546C003C9981 /* PasswordVerifierSpec.swift in Sources */,
+				F4F74EB11EC2548F003C9981 /* SwuPasswordVerifierSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +431,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5B283G7QPP;
 				INFOPLIST_FILE = tddSwiftBlank/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.swu.tddSwiftBlank;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -431,6 +445,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5B283G7QPP;
 				INFOPLIST_FILE = tddSwiftBlank/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.swu.tddSwiftBlank;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -444,11 +459,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 5B283G7QPP;
 				INFOPLIST_FILE = tddSwiftBlankTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.swu.tddSwiftBlankTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tddSwiftBlank.app/tddSwiftBlank";
 			};
@@ -460,6 +477,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 5B283G7QPP;
 				INFOPLIST_FILE = tddSwiftBlankTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -489,6 +507,7 @@
 				F4F74E9E1EBBCAE7003C9981 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F4F74E9F1EBBCAE7003C9981 /* Build configuration list for PBXNativeTarget "tddSwiftBlankTests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +516,7 @@
 				F4F74EA11EBBCAE7003C9981 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
