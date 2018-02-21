@@ -97,14 +97,14 @@ A set of solutions to this exercise can be found under the `tddSwiftBlankTests/S
 
 You may want to,
 - install the [quick templates](https://github.com/Quick/Quick/blob/master/Documentation/en-us/InstallingFileTemplates.md) to create new spec files faster.
-- use `cdes`, `cccont`, and `cit` to quickly write tests.  If you don't have these snippets, install them [here](#boiler-plate-and-auto-completion) - these are `Cedar` templates, but they work for Quick!
+- use `cdes`, `cccont`, and `cit` to quickly write tests.  If you don't have these snippets, install them [here](https://github.com/cedarbdd/cedar/wiki/Installation#installing-templates-and-snippets) - these are `Cedar` templates, but they work for Quick!
 
 ## Other Resources
 
 This tutorial only covers testing in Swift and assumes some basic knowledge about TDD & BDD.  For a more basic tutorial in Objective-C, visit [tdd-swift-barebone](https://github.com/connected-swu/tdd-objc-barebone).
 
 A wealth of knowledge exists at [Quick documentation](https://github.com/Quick/Quick/tree/master/Documentation/en-us).  This includes,
-- [Further resources](https://github.com/Quick/Quick/blob/master/Documentation/en-us/MoreResources.md) about how Quick is used for testing thing such as networking with libraries like RxSwit, Moya, etc.
+- [Additional resources](https://github.com/Quick/Quick/blob/master/Documentation/en-us/MoreResources.md) about how Quick is used for testing thing such as networking with libraries like RxSwit, Moya, etc.
 - How to write [shared examples](https://github.com/Quick/Quick/blob/master/Documentation/en-us/SharedExamples.md) - perhaps you'd like to try writing protocol level tests?  Use with caution though, you can easily end up with spaghetti tests by over-prioritizing reusability.
 - The importance of [choosing correct matchers](https://github.com/Quick/Quick/blob/master/Documentation/en-us/NimbleAssertions.md)
 
